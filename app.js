@@ -8,8 +8,8 @@ app.get('/', async(req, res) => {
     var meta = new AWS.MetadataService();
     meta.request("/latest/meta-data/instance-id", function(err, data) {
         console.log(data);
-        //let instanceId = data || 'NA';
-        let instanceId = 'i-076acd439f4d65d6a';
+        let instanceId = data || 'NA';
+        //let instanceId = 'i-076acd439f4d65d6a';
         // Make a request for a user with a given ID
         let url = `http://api-dev.kwikpic.in/api/app/ec2/entries/${instanceId}`;
         axios.get(url)
