@@ -14,7 +14,7 @@ export NVM_DIR="/.nvm"
 #upgrade yum
 sudo apt-get update
 #install git
-sudo apt install git -y
+#sudo apt install git -y
 cd /home/ubuntu
 # get source code from githubt
 git clone https://github.com/ShahrukhMobilecoderz/demo-nodejs.git
