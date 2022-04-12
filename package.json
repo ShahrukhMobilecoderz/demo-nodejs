@@ -1,0 +1,10 @@
+{
+  "name": "auto-scaling-nodejs-app",
+  "version": "1.0.0",
+  "author": "felixyu",
+  "dependencies": {
+    "aws-sdk": "^2.1112.0",
+    "axios": "^0.26.1",
+    "express": "4.17.1"
+  }
+}
