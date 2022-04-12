@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Autoscaling</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1112.0.min.js"></script>
+</head>
+
+<body>
+
+    <h1>Autoscaling</h1>
+
+    <script>
+        (function() {
+
+            var meta = AWS.MetadataService();
+            meta.request("/latest/meta-data/instance-id", function(err, data) {
+                console.log(data);
+                let instanceId = data || 'NA';
+            });
+        })();
+    </script>
+</body>
+
+</html>
